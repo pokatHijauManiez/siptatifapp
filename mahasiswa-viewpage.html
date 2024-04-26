@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mahasiswa</title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <link rel="stylesheet" href="mahasiswa-viewpage.css">
+        <link rel="icon" href="uin.png" type="image/png">
+    </head>
+
+    <body>
+        <!--header-->
+        <header class="main-header">
+          <div class="logo">
+            <h1>SIPTATIF</h1>
+          </div>
+          <div class="user-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </header>
+        <!--end-->
+
+         <!--tombol berkas dan dosen-->
+        <div class="container">
+          <button id="berkasButton" class="active" onclick="toggleContent('berkas')">Berkas Mahasiswa</button>
+          <button id="dosenButton" onclick="toggleContent('dosen')">Input Dosen Penguji</button>
+        </div>
+
+        <!--form berkas mhs-->
+        <div id="berkasContent" class="content active">
+          <!-- Formulir Pengajuan Tugas Akhir -->
+          <div class="form-container">
+            <h2>Formulir Pengajuan Tugas Akhir</h2>
+            <div class="form-row">
+                <label for="jd">Jenis Daftar</label>
+                <input type="text" id="jd" name="jd">
+            </div>
+            <div class="form-row">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </div>
+            <div class="form-row">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-row">
+                <label for="judul">Judul Tugas Akhir</label>
+                <input type="text" id="judul" name="judul">
+            </div>
+            <div class="form-row">
+                <label for="kategori">Kategori:</label>
+                <input type="text" id="kategori" name="kategori">
+            </div>
+            <div class="form-row">
+                <label for="dosen1">Calon Dosen Pembimbing 1</label>
+                <input type="text" id="dosen1" name="dosen1">
+            </div>
+            <div class="form-row">
+                <label for="dosen2">Calon Dosen Pembimbing 2</label>
+                <input type="text" id="dosen2" name="dosen2">
+            </div>
+            <div class="form-row">
+                <label for="berkas">Berkas</label>
+                <input type="file" id="berkas" name="berkas" accept=".pdf">
+            </div>
+            <div class="form-row">
+                <label>Status Berkas</label>
+                <input type="checkbox" id="disetujui" name="status" value="disetujui">
+                <label for="disetujui">Disetujui</label>
+                <input type="checkbox" id="ditolak" name="status" value="ditolak">
+                <label for="ditolak">Ditolak</label>
+            </div>
+            <div class="form-row">
+                <label for="catatan">Catatan</label>
+                <textarea id="catatan" name="catatan" rows="4" cols="50"></textarea>
+            </div>
+            <!-- <button type="submit">Kirim</button> -->
+           </div>
+            <!--end-->
+        </div>
+
+        <!--form dosen-->
+        <div id="dosenContent" class="content">
+          <!-- Input Dosen Penguji -->
+          <div class="form-container">
+            <h2>Input Dosen Penguji</h2>
+            <div class="form-row">
+                <label for="dosji">Dosen Penguji 1</label>
+                <input type="text" id="dosji" name="dosji">
+            </div>
+            <div class="form-row">
+                <label for="dosji2">Dosen Penguji 2</label>
+                <input type="text" id="dosji2" name="dosji2">
+            </div>
+            <button type="submit">Kirim</button>
+        </div>
+         <!--end-->
+         
+        <footer>
+          <!-- NAVBAR -->
+          <div class="tab-bar">
+      
+              <li class="list-item">
+                  <a href="beranda.html"></a>
+                  <i class="fa-solid fa-house"></i>
+                  <span class="list-item-text">Beranda</span>
+              </li>
+      
+              <li class="list-item">
+                  <a href="mahasiswa.html"></a>
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span class="list-item-text">Mahasiswa</span>
+              </li>
+      
+              <li class="list-item">
+                  <a href="penguji.html"></a>
+                  <i class="fa-solid fa-user-tie"></i>
+                  <span class="list-item-text">Penguji</span>
+              </li>
+      
+              <li class="list-item">
+                  <a href="pembimbing.html"></a>
+                  <i class="fa-solid fa-chalkboard-user"></i>
+                  <span class="list-item-text">Pembimbing</span>
+              </li>
+          </div>
+           <!--end-->
+
+        
+        </footer>
+       <!--JS tombol berkas dan dosen--> 
+      <script src="script.js"></script>
+       <!--end-->
+     </body>
+</html>

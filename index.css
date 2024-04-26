@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,'Poppins';
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0F5612;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    max-width: 850px;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login {
+    width: 400px;
+}
+
+form{
+    width: 250px;
+   margin: 60px auto;
+}
+
+h1{
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.hr{
+    border-top: 3px solid #c1c1c1;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Menyesuaikan ukuran area logo */
+    padding: 20px; /* Menambahkan ruang di sekitar logo */
+}
+
+.right img {
+    max-width: 100%; /* Membuat logo agar tidak melebihi lebar area yang ditentukan */
+    height: auto;
+    border-radius: 15px; /* Menambahkan border-radius pada logo */
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 2px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #0F5612;
+    margin-bottom: 10px;
+}
+
+.log-btn {
+    cursor: pointer;
+}
+
+button:hover {
+    background: #362B2B;
+}
+
+@media (max-width: 880px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    form {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .login {
+        width: 400px;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+}

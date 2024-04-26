@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Penguji</title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <link rel="stylesheet" href="penguji.css">
+        <link rel="icon" href="uin.png" type="image/png">
+    </head>
+    
+<body>
+      <!--header-->
+      <header class="main-header">
+        <div class="logo">
+          <h1>SIPTATIF</h1>
+        </div>
+        <div class="user-icon">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+      <!--end-->
+
+      <!--ISI tabel Mahasiswa untuk info mhs-->
+      <h1 class="table-title">Informasi Dosen Penguji</h1>
+      <table class="table-container">
+        <thead>
+          <tr>
+            <th>Nama</th>
+            <th>NIDN</th>
+            <th>Jenis Kelamin</th>
+            <th>Keahlian</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Dr.Fulanah, S. T, M.Kom</td>
+            <td>2145901302</td>
+            <td class="jk-pr">Perempuan</td>
+            <td>Pemograman</td>
+            <td>
+              <button onclick="location.href='penguji-view.html';" class="lihat-btn">Lihat Detail</button>
+              <button onclick="location.href='penguji-edit.html';" class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Dr.Fulanah, S. T, M.Kom</td>
+            <td>2145901302</td>
+            <td class="jk-lk">Laki - laki</td>
+            <td>Machine Learning</td>
+            <td>
+              <button onclick="location.href='penguji-view.html';" class="lihat-btn">Lihat Detail</button>
+              <button onclick="location.href='penguji-edit.html';" class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Dr.Fulanah, S. T, M.Kom</td>
+            <td>2145901302</td>
+            <td class="jk-pr">Perempuan</td>
+            <td>Pemograman Mobilie</td>
+            <td>
+              <button onclick="location.href='penguji-view.html';" class="lihat-btn">Lihat Detail</button>
+              <button onclick="location.href='penguji-edit.html';" class="edit-btn">Edit</button>
+              <button class="delete-btn">Hapus</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="add-btn-container">
+        <button onclick="location.href='penguji-add.html';"> + TAMBAHKAN</button>
+      </div>
+
+      <footer>
+        <!-- NAVBAR -->
+        <div class="tab-bar">
+    
+            <li class="list-item">
+                <a href="beranda.html"></a>
+                <i class="fa-solid fa-house"></i>
+                <span class="list-item-text">Beranda</span>
+            </li>
+    
+            <li class="list-item">
+                <a href="mahasiswa.html"></a>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="list-item-text">Mahasiswa</span>
+            </li>
+    
+            <li class="list-item">
+                <a href="penguji.html"></a>
+                <i class="fa-solid fa-user-tie"></i>
+                <span class="list-item-text">Penguji</span>
+            </li>
+    
+            <li class="list-item">
+                <a href="pembimbing.html"></a>
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span class="list-item-text">Pembimbing</span>
+            </li>
+        </div>
+         <!--end-->
+      </footer>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif,'Poppins'
+  }
+  
+/* header */
+.main-header {
+    background-color: #C1C1C1; /* Warna latar belakang abu-abu untuk header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .logo h1 {
+    margin: 0;
+    color: #0f5612;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+  }
+/*end*/
+
+/*formulir*/
+.form-container {
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+  
+  .form-row {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .form-row label {
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+  }
+  
+  .form-row input[type="text"],
+  .form-row textarea {
+    width: calc(100% - 150px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+/*end*/
+  

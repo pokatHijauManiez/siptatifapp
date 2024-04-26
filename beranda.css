@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif,'Poppins'
+  }
+  
+/* header */
+.main-header {
+    background-color: #C1C1C1; /* Warna latar belakang abu-abu untuk header */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+  .logo h1 {
+    margin: 0;
+    color: #0f5612;
+  }
+  
+  .user-icon {
+    font-size: 24px;
+  }
+/*end*/
+
+/*beranda*/
+.info .highlight-text{
+  font-weight: bold;
+  background-color: #19981E; /* Warna latar belakang kuning */
+  padding: 2px 5px; /* Padding untuk memberikan ruang di sekitar teks */
+  display: inline-block; /* Menjadikan elemen sebagai inline-block */
+  color: black !important; /* Warna teks hitam dengan menggunakan !important */
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.container {
+  padding: 20px;
+}
+
+.light-text {
+  font-weight: lighter; 
+  font-size: 25px;
+}
+
+.smaller-text {
+  font-size: 25px;
+}
+
+.small-text {
+  font-size: 18px;
+}
+
+.italic-text {
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.separator {
+  border: 2px solid #c1c1c1;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+/*end*/
+
+/*navbar*/
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100vh;
+    font-family: sans-serif, 'Poppins';
+    margin-top: 100px; /* Jarak antara konten utama dengan footer */
+  }
+  
+  .tab-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .list-item {
+    list-style-type: none;
+    flex-basis: 100%;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: #362b2b;
+    transform: translateY(0);
+    cursor: pointer;
+    margin-bottom: auto;
+    justify-content: center;
+    transition: 0.5s ease;
+  }
+  
+  .fa-solid {
+    font-weight: 900;
+    font-size: 25px;
+  }
+  
+  .list-item-text {
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    transform: translateY(calc(50% + 10px));
+    transition: 0.5s ease, 0.2s ease;
+  }
+  
+  .list-item:hover {
+    color: #0f5612; /* Warna saat tombol dihover */
+    transform: translateY(-5px);
+  }
+  
+  .list-item.active {
+    color: #0f5612; /* Warna saat tombol aktif */
+  }
+  
+  .list-item:hover .list-item-text {
+    transform: translateY(25px);
+    opacity: 1;
+  }
+/*end*/
+  
